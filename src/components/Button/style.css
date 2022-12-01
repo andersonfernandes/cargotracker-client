@@ -1,0 +1,12 @@
+.buttonComponent {
+    padding: .8em;
+    border-radius: .2em;
+    color: white;
+    text-decoration: none;
+    background-color: #1e1e1e;
+    transition: opacity .2s ease-in-out;
+}
+
+.buttonComponent:hover {
+    opacity: .5;
+}

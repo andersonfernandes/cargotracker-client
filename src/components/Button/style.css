@@ -1,5 +1,6 @@
 .buttonComponent {
-    padding: .8em;
+    cursor: pointer;
+    padding: .6em 1.2em;
     border-radius: .2em;
     color: white;
     text-decoration: none;

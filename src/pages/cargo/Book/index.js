@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import AdminMenu from "../../../components/AdminMenu";
+import { Button } from "../../../components/Button";
+import ButtonLink from "../../../components/Button/Link";
 import Container from "../../../components/Container";
 import './style.css';
 
@@ -35,11 +36,9 @@ export default function CargoBook() {
             <input type="date" />
           </div>
           <div className="formActions">
-            <button type="reset">Clear</button>
-            <button>
-              <Link to="/">Cancel</Link>
-            </button>
-            <button type="submit">Save</button>
+            <Button type="reset">Clear</Button>
+            <ButtonLink to="/">Cancel</ButtonLink>
+            <Button type="submit">Save</Button>
           </div>
         </form>
       </main>

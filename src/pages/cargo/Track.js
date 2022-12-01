@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { format } from 'date-fns';
+import Container from "../../components/Container";
+import Menu from "../../components/Menu";
 
 const CargoInfo = ({ cargo }) => {
   return (
@@ -29,20 +30,19 @@ export default function CargoTrack() {
   }
 
   return (
-    <>
-      <div>
-        <Link to="/">Home</Link>
-      </div>
+    <Container>
+      <Menu />
+      <main>
+        <h1>Cargo Tracking</h1>
 
-      <h1>Cargo Tracking</h1>
+        <form onSubmit={getCargoInfo}>
+          <input onChange={(event) => setTrackingId(event.target.value)} />
+        </form>
 
-      <form onSubmit={getCargoInfo}>
-        <input onChange={(event) => setTrackingId(event.target.value)} />
-      </form>
+        <br />
 
-      <br />
-
-      {cargo && <CargoInfo cargo={cargo} />}
-    </>
+        {cargo && <CargoInfo cargo={cargo} />}
+      </main>
+    </Container>
   );
 }

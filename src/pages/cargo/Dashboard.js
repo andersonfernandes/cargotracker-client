@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { format } from 'date-fns';
 
 import AdminMenu from "../../components/AdminMenu";
+import Container from "../../components/Container";
 
 export default function CargoDashboard() {
   const [cargos, setCargos] = useState([]);
@@ -13,31 +14,33 @@ export default function CargoDashboard() {
   }, []);
 
   return (
-    <>
+    <Container>
       <AdminMenu />
+      <main>
 
-      <h1>Cargas registradas</h1>
+        <h1>Cargas registradas</h1>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Tracking ID</th>
-            <th>Source</th>
-            <th>Destination</th>
-            <th>Deadline</th>
-          </tr>
-        </thead>
-        <tbody>
-          {cargos.map(cargo => (
-            <tr key={cargo._id}>
-              <td>{cargo.trackingId}</td>
-              <td>{cargo.source.name}</td>
-              <td>{cargo.destination.name}</td>
-              <td>{format(new Date(cargo.deadlineAt), 'MM/dd/yyyy')}</td>
+        <table>
+          <thead>
+            <tr>
+              <th>Tracking ID</th>
+              <th>Source</th>
+              <th>Destination</th>
+              <th>Deadline</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </>
+          </thead>
+          <tbody>
+            {cargos.map(cargo => (
+              <tr key={cargo._id}>
+                <td>{cargo.trackingId}</td>
+                <td>{cargo.source.name}</td>
+                <td>{cargo.destination.name}</td>
+                <td>{format(new Date(cargo.deadlineAt), 'MM/dd/yyyy')}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </main>
+    </Container>
   );
 }

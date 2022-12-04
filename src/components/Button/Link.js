@@ -6,7 +6,7 @@ export default function ButtonLink({ to, type, children }) {
         <Link to={to || ""}>
             <button
                 type={type}
-                className="buttonComponent"
+                className="button-component"
             >
                 {children}
             </button>

@@ -1,10 +1,11 @@
 import './style.css';
 
-export function Button({ type, children }) {
+export function Button({ type, color, children }) {
     return (
         <button
             type={type}
-            className="buttonComponent"
+            className="button-component"
+            style={{ backgroundColor: color }}
         >
             {children}
         </button>

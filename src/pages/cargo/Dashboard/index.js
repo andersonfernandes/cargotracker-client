@@ -12,9 +12,7 @@ export default function CargoDashboard() {
   useEffect(() => {
     fetch("https://cargotracker-api.up.railway.app/cargos")
       .then((response) => response.json())
-      .then(([data]) => {
-        setCargos([data, data, data]);
-      });
+      .then(setCargos);
   }, []);
 
   return (

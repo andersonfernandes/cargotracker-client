@@ -41,7 +41,7 @@ export function Card({ cargo }) {
         </div>
       </div>
       <p className="card-limit">
-        {format(new Date(cargo.deadlineAt), "MM/dd/yyyy")}
+        {format(new Date(cargo.deadlineAt), "dd/MM/yyyy")}
       </p>
     </article>
   );

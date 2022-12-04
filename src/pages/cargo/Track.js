@@ -11,7 +11,7 @@ const CargoInfo = ({ cargo }) => {
       </div>
 
       <div>
-        Com data limite: {format(new Date(cargo.deadlineAt), 'MM/dd/yyyy')}
+        Com data limite: {format(new Date(cargo.deadlineAt), 'dd/MM/yyyy')}
       </div>
     </>
   )

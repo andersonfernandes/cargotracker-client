@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { format } from 'date-fns';
 import Container from "../../components/Container";
-import Menu from "../../components/Menu";
+import { Menu } from "../../components/Menus/Menu";
 
 const CargoInfo = ({ cargo }) => {
   return (
@@ -32,11 +32,11 @@ export default function CargoTrack() {
   return (
     <Container>
       <Menu />
-      <main>
-        <h1>Cargo Tracking</h1>
+      <main className="page-content">
+        <h1  className="page-title">Cargo Tracking</h1>
 
         <form onSubmit={getCargoInfo}>
-          <input onChange={(event) => setTrackingId(event.target.value)} />
+          <input onChange={(event) => setTrackingId(event.target.value.toLowerCase())} />
         </form>
 
         <br />

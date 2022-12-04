@@ -1,13 +1,16 @@
-.buttonComponent {
+.button-component {
     cursor: pointer;
-    padding: .6em 1.2em;
-    border-radius: .2em;
-    color: white;
+    padding: .8em 1.5em;
+    border: none;
+    border-radius: 4px;
+    color: #FEFEFE;
     text-decoration: none;
-    background-color: #1e1e1e;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #2C2D2D;
     transition: opacity .2s ease-in-out;
 }
 
-.buttonComponent:hover {
+.button-component:hover {
     opacity: .5;
 }

@@ -1,0 +1,30 @@
+.headerComponent {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8em 2.25em;
+    color: white;
+    border-bottom: 3px solid #2B2B2B;
+}
+
+.headerComponent .logo {
+    font-size: 3rem;
+    margin-right: .35em;
+}
+
+.headerComponent .name {
+    width: max-content;
+}
+
+.headerComponent .name h1 {
+    color: #D2D2D2;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 -0.3em 0;
+}
+
+.headerComponent .name span {
+    color: #8B8B8B;
+    font-size: .8rem;
+}

@@ -1,0 +1,32 @@
+.menuComponent {
+    width: fit-content;
+    height: 100vh;
+    background-color: #181818;
+}
+
+.menuComponent ul,
+.menuComponent li {
+    color: #9E9E9E;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menuComponent .icon {
+    font-size: 1.2rem;
+}
+
+.menuComponent a:hover {
+    color: #EEF9FE;
+    background-color: #436BFD;
+    transition: background-color .2s ease-in-out;
+}
+
+.menuComponent a {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: .8em 2.5em;
+    color: #9E9E9E;
+    text-decoration: none;
+}

@@ -6,4 +6,5 @@ main {
     justify-content: center;
     flex-direction: column;
     gap: .5em;
+    background-color: #000101;
 }

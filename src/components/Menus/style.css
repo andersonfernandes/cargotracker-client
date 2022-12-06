@@ -1,0 +1,42 @@
+.menu-component {
+    width: fit-content;
+    height: 100vh;
+    background-color: #181818;
+}
+
+.menu-component ul,
+.menu-component li {
+    color: #9E9E9E;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-component .icon {
+    font-size: 1.2rem;
+}
+
+
+
+.menu-component a {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: .8em 2.5em;
+    color: #9E9E9E;
+    text-decoration: none;
+}
+
+.menu-component .active a,
+.menu-component a:hover {
+    color: #EEF9FE;
+    transition: all .2s ease-in-out;
+}
+
+.menu-component .active a {
+    background-color: #3A5ACF;
+}
+
+.menu-component a:hover {
+    background-color: #436BFD;
+}

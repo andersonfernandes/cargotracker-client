@@ -1,0 +1,23 @@
+.cargo-container {
+    width: 100%;
+    overflow: auto;
+}
+
+.cargo-wrapper {
+    max-width: 100%;
+    padding: 2em;
+    overflow: auto;
+}
+
+.cargo-section-title {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.cargo-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 2em
+}

@@ -1,0 +1,77 @@
+.card-container {
+    min-width: 15em;
+    position: relative;
+    padding: 1.2em 1.5em;
+    border-radius: 4px;
+    background-color: #181818;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header .card-details {
+    cursor: pointer;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+
+.card-header .card-traking-label {
+    font-size: .8rem;
+}
+
+.card-header .card-traking-content {
+    margin: -0.25em 0 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-header .card-status {
+    font-size: 1.2rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    padding: 1em 0;
+}
+
+.card-location-container {
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+
+.card-location-icon {
+    font-size: 1.5rem;
+}
+
+.card-location-dots {
+    margin-left: .25rem;
+}
+
+.card-body .card-location-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .card-location {
+    margin: 0;
+}
+
+.card-location-description {
+    font-size: .8rem;
+    opacity: .6;
+}
+
+.card-limit {
+    margin: 1em 0 0;
+    font-size: .85rem;
+    font-weight: 500;
+    text-align: end;
+}

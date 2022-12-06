@@ -3,4 +3,16 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    background-color: #000101;
+}
+
+.page-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.page-title {
+    font-weight: 500;
+    margin: 1em 0 0 1em;
 }

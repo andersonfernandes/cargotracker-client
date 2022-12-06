@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
 import './style.css';
 
-export default function Button({ to, children }) {
+export function Button({ type, color, children }) {
     return (
-        <>
-            <Link className="buttonComponent" to={to}>{children}</Link>
-        </>
+        <button
+            type={type}
+            className="button-component"
+            style={{ backgroundColor: color }}
+        >
+            {children}
+        </button>
     )
 }

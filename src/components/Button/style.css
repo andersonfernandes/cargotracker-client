@@ -5,8 +5,9 @@
     border-radius: 4px;
     color: #FEFEFE;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: .9rem;
+    font-family: inherit;
     background-color: #2C2D2D;
     transition: opacity .2s ease-in-out;
 }

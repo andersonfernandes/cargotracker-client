@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 
-import CargoBook from './pages/cargo/Book'
-import CargoDashboard from './pages/cargo/Dashboard'
-import CargoTrack from './pages/cargo/Track'
+import CargoBook from './pages/Book'
+import CargoDashboard from './pages/Dashboard'
+import CargoTrack from './pages/Track'
 import Home from './pages/Home'
+import Cargo from './pages/Cargo'
 
 export default function Router() {
   return (
@@ -12,6 +13,7 @@ export default function Router() {
         <Route path='/track' element={<CargoTrack />} />
         <Route path='/book' element={<CargoBook />} />
         <Route path='/dashboard' element={<CargoDashboard />} />
+        <Route path='/dashboard/:id' element={<Cargo />} />
       </Routes>
   )
 }

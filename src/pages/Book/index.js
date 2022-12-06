@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Button } from "../../../components/Button";
-import Container from "../../../components/Container";
-import { AdminMenu } from "../../../components/Menus/AdminMenu";
+import { Button } from "../../components/Button";
+import Container from "../../components/Container";
+import { AdminMenu } from "../../components/Menus/AdminMenu";
 import "./style.css";
 
 export default function CargoBook() {
@@ -41,7 +41,7 @@ export default function CargoBook() {
           <h2 className="booking-form-title">Cargo Info</h2>
           <div className="form-field">
             <label>1. Choose the origin of the new cargo</label>
-            <select>
+            <select required>
               <option disabled value="default">
                 Select an onption
               </option>
@@ -56,7 +56,7 @@ export default function CargoBook() {
             <label>
               2. Set the destination for this new cargo coming from Melbourne
             </label>
-            <select>
+            <select required>
               <option disabled value="default">
                 Select an onption
               </option>
@@ -71,7 +71,7 @@ export default function CargoBook() {
             <label>
               3. Set the arrival deadline for this new Melbourne-Hangzhou cargo
             </label>
-            <input type="date" />
+            <input required type="date" data />
           </div>
           <div className="form-actions">
             <Button type="reset">Clear</Button>

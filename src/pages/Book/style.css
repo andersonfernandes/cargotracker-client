@@ -28,6 +28,7 @@
 
 .form-field input, .form-field select {
     color: #E2E5E4;
+    font-family: inherit;
     padding: 1em 1.5em;
     border: none;
     border-radius: 4px;

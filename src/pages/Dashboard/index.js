@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import Container from "../../../components/Container";
-import { AdminMenu } from "../../../components/Menus/AdminMenu";
+import Container from "../../components/Container";
+import { AdminMenu } from "../../components/Menus/AdminMenu";
 import { Card } from "./components/Card";
 
 import "./style.css";

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MenuHeader from "./Header";
 import { AiFillHome, AiFillAppstore } from "react-icons/ai";
 import { GiCardboardBoxClosed, GiCargoCrate } from "react-icons/gi";
@@ -6,8 +6,10 @@ import { GiCardboardBoxClosed, GiCargoCrate } from "react-icons/gi";
 import "./style.css";
 
 export function AdminMenu() {
+  const location = useLocation();
+
   return (
-    <div className="menuComponent">
+    <div className="menu-component">
       <MenuHeader />
       <nav>
         <ul>
@@ -16,12 +18,12 @@ export function AdminMenu() {
               <AiFillHome className="icon" /> Home
             </Link>
           </li>
-          <li>
+          <li className={location.pathname.split("/")[1] === "dashboard" ? "active" : "deative"}>
             <Link to="/dashboard">
               <AiFillAppstore className="icon" /> Dashboard
             </Link>
           </li>
-          <li>
+          <li className={location.pathname === "/book" ? "active" : "deative"}>
             <Link to="/book">
               <GiCargoCrate className="icon" /> Book
             </Link>

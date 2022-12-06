@@ -1,0 +1,23 @@
+.adminMenuComponent {
+    width: fit-content;
+    height: 100vh;
+    padding: 0 2.5em;
+    background-color: #1e1e1e;
+}
+
+.adminMenuComponent ul,
+.adminMenuComponent li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.adminMenuComponent li {
+    padding: .25em 0;
+}
+
+.adminMenuComponent a {
+    color: white;
+    text-decoration: none;
+}
